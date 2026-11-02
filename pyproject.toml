@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mocafe"
+version = "0.1.0"
+description = "MoCaFe and p-MoCaFe: unsupervised model adaptation for object recognition via movement."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.9"
+authors = [
+    { name = "Yanan Ma" },
+    { name = "Yihang Tao" },
+    { name = "Zhengru Fang" },
+    { name = "Senkang Hu" },
+    { name = "Xianhao Chen" },
+    { name = "Yuguang Fang" },
+]
+keywords = ["unsupervised domain adaptation", "pseudo-labels", "object tracks", "pytorch"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "numpy",
+    "pillow",
+    "torch>=2.0",
+    "torchvision>=0.15",
+]
+
+[project.optional-dependencies]
+dev = ["build", "pytest", "ruff"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

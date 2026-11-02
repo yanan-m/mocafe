@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper below."
+title: "MoCaFe"
+license: MIT
+authors:
+  - family-names: Ma
+    given-names: Yanan
+preferred-citation:
+  type: conference-paper
+  title: "Mobility Helps Learning: Unsupervised Model Adaptation for Object Recognition via Movement"
+  collection-title: "Advances in Neural Information Processing Systems (NeurIPS)"
+  year: 2026
+  authors:
+    - family-names: Ma
+      given-names: Yanan
+    - family-names: Tao
+      given-names: Yihang
+    - family-names: Fang
+      given-names: Zhengru
+    - family-names: Hu
+      given-names: Senkang
+    - family-names: Chen
+      given-names: Xianhao
+    - family-names: Fang
+      given-names: Yuguang
+  identifiers:
+    - type: other
+      value: "arXiv:2610.15846"
+  url: "https://arxiv.org/abs/2610.15846"

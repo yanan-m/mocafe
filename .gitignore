@@ -1,0 +1,21 @@
+# Datasets, crops and experiment outputs are never committed.
+data/
+outputs/
+*.pt
+*.pth
+*.npy
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+.pytest_cache/
+.ruff_cache/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
