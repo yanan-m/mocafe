@@ -37,6 +37,13 @@ result = p_mocafe("source.pt", "data/", "outputs/p-mocafe", seed=0)
 print(result["source_accuracy"], "->", result["accuracy"])
 ```
 
+## Data preparation
+
+Download nuScenes v1.0-trainval from [nuscenes.org](https://www.nuscenes.org/nuscenes). 
+Crop each annotated object from the camera keyframes, and use the nuScenes instance token as `track_id` so that
+the crops of one physical object form a track. Then place the crops in `data/` with these CSV
+manifests (image paths relative to `data/`):
+
 
 ## Outputs
 
