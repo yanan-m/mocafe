@@ -35,7 +35,7 @@ print(result["source_accuracy"], "->", result["accuracy"])
 
 Download nuScenes v1.0-trainval from [nuscenes.org](https://www.nuscenes.org/nuscenes). 
 Crop each annotated object from the camera keyframes, and use the nuScenes instance token as `track_id` so that
-the crops of one physical object form a track. 
+the crops of one object form a sequence. 
 
 
 ## Outputs
@@ -52,7 +52,7 @@ output_dir/
 ```bibtex
 @inproceedings{ma2026mobility,
   title     = {Mobility Helps Learning: Unsupervised Model Adaptation for Object Recognition via Movement},
-  author    = {Ma, Yanan and Tao, Yihang and Fang, Zhengru and Hu, Senkang and Chen, Xianhao and Fang, Yuguang},
+  author    = {Ma, Yanan, Tao, Yihang, Fang, Zhengru, Hu, Senkang, Chen, Xianhao and Fang, Yuguang},
   booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
   year      = {2026}
 }
